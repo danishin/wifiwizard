@@ -12,12 +12,11 @@
 	<license>Apache 2.0</license>
 	<repo>https://github.com/danishin/WifiWizard/</repo>
 	
-	<js-module src="www/WifiWizard.js" name="WifiWizard">
-		<clobbers target="window.WifiWizard"/>
+	<js-module src="www/wifiwizard.js" name="wifiwizard">
+		<merges target="cordova.plugins.wifiwizard"/>
 	</js-module>
 	
 	<platform name="android">
-		
 		<config-file target="AndroidManifest.xml" parent="/manifest">
 			<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 			<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
@@ -31,7 +30,7 @@
 			</feature>
 		</config-file>
 		
-		<source-file src="src/android/src/com/danishin/wifiwizard/WifiWizard.java" target-dir="src/com/danishin/wifiwizard" />
+		<source-file src="src/android/WifiWizard.java" target-dir="src/com/danishin/wifiwizard/" />
 	</platform>
 	
 	<platform name="ios">
