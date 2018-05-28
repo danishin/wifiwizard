@@ -7,10 +7,10 @@
 	
 	<name>WifiWizard</name>
 	<description>Cordova plugin for managing wifi connections</description>
-	<author>Matt Parsons</author>
+	<author>Daniel Shin</author>
 	<keywords>phonegap,network,wifi</keywords>
 	<license>Apache 2.0</license>
-	<repo>https://github.com/danishin/WifiWizard/</repo>
+	<repo>https://github.com/danishin/wifiwizard/</repo>
 	
 	<js-module src="www/wifiwizard.js" name="wifiwizard">
 		<merges target="cordova.plugins.wifiwizard"/>
